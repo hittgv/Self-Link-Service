@@ -1,0 +1,10 @@
+language: java
+jdk:
+- oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: u0eg7AB8lbYKdhPsYP7irtG2E2FZR4DZUm/4YBit2yoxgWddCGfxC55fObtnhQtfAU+ni10uXA0mwK8gqrtobRk82H+RZndXTX/pzMAF7XY+HyqET2on5pN4uzamU8fC2u3WC5dkwZWYPkvBlmrDTcjgbxK+7ApB4vlODmPwnv/Ic9NYnFzQ/X7VFjjdbRWJmMbp5LYwHqHx8+YQitMgiJrtZnHP7B5FVTQ2FIKypMyn9coLjijyuwNAtI3YuPAwr2j2DXYkd56aagABlHfxPGtjfOtBIit6de0wRLIC0aoW8pOwEXPeTSFMMEiS7aFuwhwdwdQqu+EzZjK3yJmjupkM2lqZ2FDAgif4GReABgsksCrVgO86fDXywEiuzPq3OlJQ0BED4b1Jras3/hOv5rJ6cYmyRWG+uM18nam0RlU11MmwPBqJjd2SyH8hkiVdg3iCMNpZdV5covURowvB72smU0DhwDGMT+wiyRafWlcsmK2lnsHuKjM4yNOUaNHGPHpALRKjf/pnC/K1h4LeMLCcAWDC/w8Tru8Zqyr88kxA8Wv3YloyDx4Z8NJXP7zHAqmftHnK5x2BxBOKxsE29yshQhPjDbPLNmtYYBjAKRLdki4u6ehdAFY11HfcNFwa7sNXlfy7HnQz4Kwj8j8/W8aehKW21tlKwkTFTM7Xpnk=
+  app: self-link-service
+  on:
+    repo: hittgv/Self-Link-Service

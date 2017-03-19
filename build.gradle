@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.4'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = '1.8'
+
+mainClassName='io.restall.hittgv.self.App'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.7'
+
+    compile "io.javaslang:javaslang:2.0.5"
+    compile "io.javaslang:javaslang-jackson:2.0.5"
+    compile 'commons-validator:commons-validator:1.6'
+
+    compile 'org.jsoup:jsoup:1.10.2'
+    compile 'com.sparkjava:spark-core:2.3'
+}
+
+task stage() {
+    dependsOn shadowJar
+}
