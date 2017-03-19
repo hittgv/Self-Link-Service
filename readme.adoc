@@ -1,0 +1,9 @@
+# Self link service
+
+Returns
+
+```
+{
+  'self-links':'100'
+}
+```
